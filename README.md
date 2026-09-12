@@ -48,6 +48,7 @@ Suggested actions include clearer sizing guidance, more accurate product images 
 - `Dataset - Real-Time Retail Feedback Intelligence.csv`: source dataset used by the notebook.
 - `local_judge_re_evaluation_final.csv`: consolidated local-judge results for the 600 model outputs; it also retains the original generation metrics and source result file.
 - `recommendation_classification_results.csv`: model-level recommendation prediction results.
+- `results_zero_shot_final.csv`, `results_few_shot_final.csv`, `results_cot_final.csv`: technique-level extracts (200 rows each) derived from the consolidated final evaluation file. Each includes the model output fields, generation metrics, and local-judge fields.
 - `requirements.txt`: unpinned Python dependency list inferred from notebook imports; not a verified environment lockfile.
 - `.gitignore`: excludes secrets, checkpoints, unreviewed datasets, generated CSVs, and local runtime files while explicitly allowing the three reviewed CSV files above.
 

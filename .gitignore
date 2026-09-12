@@ -19,6 +19,9 @@ venv/
 !Dataset - Real-Time Retail Feedback Intelligence.csv
 !local_judge_re_evaluation_final.csv
 !recommendation_classification_results.csv
+!results_zero_shot_final.csv
+!results_few_shot_final.csv
+!results_cot_final.csv
 *.parquet
 *.jsonl
 data/
