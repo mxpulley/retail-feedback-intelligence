@@ -1,0 +1,27 @@
+# Credentials and machine-specific settings
+.env
+.env.*
+!.env.example
+*credentials*.json
+*service-account*.json
+*.pem
+*.key
+
+# Python and notebook runtime files
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Input data and generated experiment outputs (add only after explicit review)
+*.csv
+*.parquet
+*.jsonl
+data/
+checkpoints/
+*.log
+
+# Operating-system files
+.DS_Store
+Thumbs.db

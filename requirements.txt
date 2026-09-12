@@ -1,0 +1,15 @@
+# Python packages imported by the notebook; versions are not locked.
+# Google Colab supplies google.colab. Ollama also requires its system runtime.
+numpy
+pandas
+matplotlib
+seaborn
+plotly
+wordcloud
+scikit-learn
+tqdm
+ipython
+openai
+ollama
+pydantic>=2,<3
+requests
