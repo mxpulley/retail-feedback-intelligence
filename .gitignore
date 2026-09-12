@@ -16,6 +16,9 @@ venv/
 
 # Input data and generated experiment outputs (add only after explicit review)
 *.csv
+!Dataset - Real-Time Retail Feedback Intelligence.csv
+!local_judge_re_evaluation_final.csv
+!recommendation_classification_results.csv
 *.parquet
 *.jsonl
 data/

@@ -45,17 +45,20 @@ Suggested actions include clearer sizing guidance, more accurate product images 
 ## Files
 
 - `Retail_Feedback_Intelligence.ipynb`: publication copy of the Final Submission notebook, with execution outputs and private runtime metadata removed. Original code and analysis narrative are retained.
+- `Dataset - Real-Time Retail Feedback Intelligence.csv`: source dataset used by the notebook.
+- `local_judge_re_evaluation_final.csv`: consolidated local-judge results for the 600 model outputs; it also retains the original generation metrics and source result file.
+- `recommendation_classification_results.csv`: model-level recommendation prediction results.
 - `requirements.txt`: unpinned Python dependency list inferred from notebook imports; not a verified environment lockfile.
-- `.gitignore`: excludes secrets, datasets, generated CSVs, and local runtime files from future Git commits.
+- `.gitignore`: excludes secrets, checkpoints, unreviewed datasets, generated CSVs, and local runtime files while explicitly allowing the three reviewed CSV files above.
 
 ## How to use
 
 1. Open the notebook in Google Colab using **File > Open notebook > GitHub**, or download it and upload it to Colab. Access to this private repository requires authorization.
-2. Supply your own copy of the dataset. The course materials and dataset are deliberately not redistributed here. Check the original dataset's redistribution terms before sharing it.
+2. The source dataset and the two final result files are included in this private repository. Review the dataset's original redistribution terms before changing the repository to public.
 3. Mount your Google Drive and update the paths that reference `AAIDSP/Capstone project` to match your own folder.
 4. For model generation, configure Colab Secrets named `OPENAI_API_KEY` and `Gemini_API_Key`. The OpenAI-compatible client is configured for the **Great Learning endpoint**, not a personal OpenAI API endpoint. Access and credits are required for that service. Never paste keys into notebook cells or commit them.
 5. For local evaluation, run the notebook's Ollama setup and model-download cells in a GPU runtime. The original evaluation used a T4. Ollama is a separate system dependency; installing its Python package alone is insufficient.
-6. To resume analysis without generating outputs again, supply the existing result CSVs referenced by the notebook, including `results_zero_shot_final.csv`, `results_few_shot_final.csv`, `results_cot_final.csv`, `local_judge_re_evaluation_final.csv`, and `recommendation_classification_results.csv`. These files are not included in this initial upload.
+6. To resume the final analysis without generating outputs again, load `local_judge_re_evaluation_final.csv` and `recommendation_classification_results.csv`. The consolidated local-judge file contains the outputs and original generation metrics from the three prompting-technique result files, so those intermediate CSVs are not duplicated here.
 7. Run only the sections you need. **Do not select Run all unless you intend to run paid model calls and lengthy GPU evaluations.**
 
 ## Limitations and cost interpretation
@@ -68,4 +71,4 @@ Suggested actions include clearer sizing guidance, more accurate product images 
 
 ## Attribution and sharing
 
-Prepared as an academic capstone using course-provided starting materials. Course instructions, template notebooks, another author's comparison repository, and credentials are excluded. No open-source license is assigned in this initial private version; review third-party rights before making the repository public or licensing it.
+Prepared as an academic capstone using course-provided starting materials. Course instructions, template notebooks, another author's comparison repository, and credentials are excluded. The dataset and anonymized experiment results are included only in this private version. No open-source license is assigned; review third-party rights before making the repository public or licensing it.
